@@ -1,0 +1,8 @@
+@import url("/usr/share/gnome-shell/theme/ubuntu.css");
+
+/* Override the font stuff*/
+stage {
+  font-family: Red Hat Display;
+  font-size: 11pt;
+  color: #eeeeec;
+}
