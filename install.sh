@@ -7,22 +7,19 @@ sudo apt install gnome-tweak-tool
 # Red Hat Fonts
 git clone git@github.com:RedHatOfficial/RedHatFont.git
 pushd RedHatFont
-mkdir -p ~/.local/share/fonts
-cp OTF/*.otf ~/.local/share/fonts/.
+sudo mkdir -p /usr/share/fonts/opentype/redhat
+sudo cp OTF/*.otf /usr/share/fonts/opentype/redhat
 popd
 rm -rf RedHatFont
 
-mkdir -p ~/.local/share/themes
-mkdir -p ~/.icons
-
 # Spence gnome shell theme
-cp -r themes/Spence\ Theme ~/.local/share/themes/.
+sudo cp -r themes/Spence\ Theme /usr/share/themes/.
 
 # Yaru colors themes
-cp -r themes/Yaru* ~/.local/share/themes/.
+sudo cp -r themes/Yaru* /usr/share/themes/.
 
 # Yaru colors icons
-cp -r icons/Yaru* ~/.icons/.
+sudo cp -r icons/Yaru* /usr/share/icons/.
 
 set +x
 
