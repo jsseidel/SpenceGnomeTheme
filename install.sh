@@ -20,6 +20,12 @@ sudo cp *.otf /usr/share/fonts/opentype/sanfrancisco/.
 popd
 rm -rf SanFranciscoFont
 
+git clone git@github.com:ZulwiyozaPutra/SF-Mono-Font.git
+pushd SF-Mono-Font
+sudo cp *.otf /usr/share/fonts/opentype/sanfrancisco/.
+popd
+rm -rf SF-Mono-Font
+
 # Powerline fonts
 sudo apt install -y python3-pip
 pip3 install --user git+git://github.com/Lokaltog/powerline
