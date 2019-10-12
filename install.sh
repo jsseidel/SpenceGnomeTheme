@@ -12,6 +12,14 @@ sudo apt install gnome-tweak-tool
 #popd
 #rm -rf RedHatFont
 
+# San Francisco
+git clone git@github.com:AppleDesignResources/SanFranciscoFont.git
+pushd SanFranciscoFont
+sudo mkdir -p /usr/share/fonts/opentype/sanfrancisco
+sudo cp *.otf /usr/share/fonts/opentype/sanfrancisco/.
+popd
+rm -rf SanFranciscoFont
+
 # Powerline fonts
 sudo apt install -y python3-pip
 pip3 install --user git+git://github.com/Lokaltog/powerline
@@ -34,11 +42,11 @@ sudo cp -r themes/Yaru* /usr/share/themes/.
 # Yaru colors icons
 sudo cp -r icons/Yaru* /usr/share/icons/.
 
-gsettings set org.gnome.desktop.interface font-name 'Nimbus Sans L Regular Condensed 11'
+gsettings set org.gnome.desktop.interface font-name 'San Francisco Display 11'
 gsettings set org.gnome.desktop.interface document-font-name 'Sans Regular 12'
 gsettings set org.gnome.desktop.interface monospace-font-name 'Inconsolata for Powerline Medium 12'
-gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Nimbus Sans L Regular 11'
-gsettings set org.gnome.nautilus.desktop font 'Nimbus Sans L Regular Condensed 11'
+gsettings set org.gnome.desktop.wm.preferences titlebar-font 'San Francisco Display Semibold 11'
+gsettings set org.gnome.nautilus.desktop font 'San Francisco Display 11'
 #gsettings reset org.gnome.desktop.interface text-scaling-factor
 
 set +x
