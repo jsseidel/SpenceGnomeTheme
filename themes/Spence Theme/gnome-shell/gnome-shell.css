@@ -1,8 +1,9 @@
-@import url("/usr/share/gnome-shell/theme/ubuntu.css");
+/*@import url("/usr/share/gnome-shell/theme/ubuntu.css");*/
+@import url("/usr/share/gnome-shell/theme/gnome-shell.css");
 
 /* Override the font stuff*/
 stage {
-  font-family: Red Hat Display;
+  font-family: Nimbus Sans L Regular Condensed;
   font-size: 11pt;
   color: #eeeeec;
 }
