@@ -59,3 +59,11 @@ set +x
 
 echo "Done."
 
+echo "To update the GDM3 login screen, add the following to /etc/gdm3/greeter.dconf-defaults:"
+echo
+echo "    [org/gnome/desktop/interface]"
+echo "    text-scaling-factor=1.60"
+echo "    font-name='San Francisco Display 11'"
+echo
+echo "And then run 'sudo dpkg-reconfigure gdm3'"
+
