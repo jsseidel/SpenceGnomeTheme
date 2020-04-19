@@ -55,7 +55,7 @@ gsettings set org.gnome.desktop.wm.preferences titlebar-font 'San Francisco Disp
 gsettings set org.gnome.nautilus.desktop font 'San Francisco Display 11'
 #gsettings reset org.gnome.desktop.interface text-scaling-factor
 
-cp -v config_gtk-3.0_gtk.css ~/.config/gtk-3.0/gtk.css
+#cp -v config_gtk-3.0_gtk.css ~/.config/gtk-3.0/gtk.css
 
 set +x
 
