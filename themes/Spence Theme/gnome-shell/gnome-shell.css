@@ -4,7 +4,8 @@
 /* Override the font stuff*/
 stage {
   /*font-family: Nimbus Sans L Regular Condensed;*/
-  font-family: San Francisco Display;
+  /* font-family: San Francisco Display; */
+  font-family: Red Hat Display 11;
   font-size: 11pt;
   color: #eeeeec;
 }

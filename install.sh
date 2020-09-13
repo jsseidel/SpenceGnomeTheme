@@ -5,12 +5,12 @@ set -x
 sudo apt install gnome-tweak-tool
 
 # Red Hat Fonts
-#git clone git@github.com:RedHatOfficial/RedHatFont.git
-#pushd RedHatFont
-#sudo mkdir -p /usr/share/fonts/opentype/redhat
-#sudo cp OTF/*.otf /usr/share/fonts/opentype/redhat
-#popd
-#rm -rf RedHatFont
+git clone git@github.com:RedHatOfficial/RedHatFont.git
+pushd RedHatFont
+sudo mkdir -p /usr/share/fonts/opentype/redhat
+sudo cp OTF/*.otf /usr/share/fonts/opentype/redhat
+popd
+rm -rf RedHatFont
 
 # San Francisco
 git clone git@github.com:AppleDesignResources/SanFranciscoFont.git
@@ -27,17 +27,17 @@ popd
 rm -rf SF-Mono-Font
 
 # Powerline fonts
-sudo apt install -y python3-pip
-pip3 install --user git+git://github.com/Lokaltog/powerline
+#sudo apt install -y python3-pip
+#pip3 install --user git+git://github.com/Lokaltog/powerline
 
 # clone
-git clone https://github.com/powerline/fonts.git --depth=1
+#git clone https://github.com/powerline/fonts.git --depth=1
 # install
-cd fonts
-./install.sh
+#cd fonts
+#./install.sh
 # clean-up a bit
-cd ..
-rm -rf fonts
+#cd ..
+#rm -rf fonts
 
 # Spence gnome shell theme
 sudo cp -r themes/Spence\ Theme /usr/share/themes/.
